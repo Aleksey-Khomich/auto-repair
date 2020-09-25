@@ -1,0 +1,89 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #0e0e0e;
+    h2 {
+        font-family: 'Algeria Two';
+        font-size: 64px;
+        font-weight: normal;
+        line-height: 72px;
+        margin-top: 0;
+        margin-bottom: 80px;
+        padding-bottom: 0;
+        color: white;
+    }
+    &_tabs {
+        border-top: 3px solid #e1ddc3;
+        border-bottom: 3px solid #e1ddc3;
+        text-align: center;
+        padding: 20px 0;
+        a {
+            font-family: "DIN Condensed";
+            margin-right: 60px;
+            font-size: 24px;
+            line-height: 1;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+    &_contents {
+        padding: 50px 64px;
+        background: url('../images/services/top-bg2.jpg') no-repeat center;
+        background-size: cover;
+        .services_item {
+            display: flex;
+            &_image {
+                padding-right: 25px;
+                font-size: 0;
+                overflow: hidden;
+            }
+            &_text_box {
+                width: 30%;
+                text-align: left;
+                .subtitle {
+                    color: #ddcfb3;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-bottom: 15px;
+                    font-family: 'Helvetica Neue';
+                }
+                h4 {
+                    margin-top: 0;
+                    font-family: 'DIN Condensed';
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 42px;
+                    line-height: 50px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-family: 'Helvetica Neue';
+                    font-size: 18px;
+                    margin-bottom: 18px;
+                    line-height: 24px;
+                    color: white;
+                }
+                .prices {
+                    font-family: 'DIN Condensed';
+                    font-size: 38px;
+                    line-height: 1;
+                    margin-bottom: 30px;
+                    color: white;
+                }
+                button {
+                    font-family: 'DIN Condensed';
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    border: none;
+                    background-color: #c6091c;
+                    padding: 16px 45px;
+                    text-align: center;
+                    color: #fff;
+                    text-decoration: none;
+                    margin-bottom: 239px;
+                }
+            }
+        }
+    }
+}
