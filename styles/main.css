@@ -412,7 +412,7 @@ img {
 .header_left .logo {
   width: 172px;
   height: 54px;
-  background: url("/images/header/Без названия.png") center no-repeat;
+  background: url("../images/header/Без названия.png") center no-repeat;
   background-size: 170px;
 }
 
@@ -467,7 +467,7 @@ img {
 .promo {
   margin: 0 auto;
   padding: 180px 30px 0;
-  background: url("/images/promo/top-bg1.jpg") center no-repeat;
+  background: url("../images/promo/top-bg1.jpg") center no-repeat;
   background-size: cover;
 }
 
