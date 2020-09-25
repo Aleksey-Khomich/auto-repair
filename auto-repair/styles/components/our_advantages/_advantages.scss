@@ -1,0 +1,54 @@
+.our_advantages {
+    display: flex;
+    flex-direction: column;
+    background-color: #0e0e0e;
+    color: white;
+    h2 {
+        position: relative;
+        text-align: center;
+        font-family: 'Algeria Two';
+        font-size: 64px;
+        line-height: 72px;
+        margin-top: 0;
+        margin-bottom: 80px;
+        padding-top: 100px;
+        letter-spacing: 0.8px;
+    }
+    .box_advantages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        .box_about {
+            display: flex;
+            width: 30%;
+            margin-bottom: 90px;
+            margin-right: 1.5%;
+            .image_svg {
+                width:100px;
+                height:100px;
+                padding-right: 20px;
+                stroke:white;
+                flex-shrink: 0;
+                border-right: 3px solid #e1ddc3;
+            }
+            &_text {
+                padding-left: 18px;
+                &_title {
+                    font-family: "DIN Condensed";
+                    font-weight: normal;
+                    margin-top: 0;
+                    line-height: 1;
+                    font-size: 28px;
+                    margin-bottom: 17px;
+                    text-transform: uppercase;
+                }
+                p {
+                    font-family: 'Helvetica Neue';
+                    font-size: 16px;
+                    color: #dbdbdb;
+                }
+            }
+        }
+    }
+}
