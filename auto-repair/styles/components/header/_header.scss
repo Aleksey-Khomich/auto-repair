@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 24px 50px 31px;
+    border-bottom: 5px solid #ddcfb3;
+    &_left,&_right {
+        display: flex;
+        align-items: center;
+    }
+    &_left {
+        display: flex;
+        .logo {
+            width: 172px;
+            height: 54px;
+            background: url('/images/header/Без\ названия.png') center no-repeat;
+            background-size: 170px;
+        }
+        .nav {
+            display: flex;
+            width: 100px;
+            height: 72px;
+            padding: 4px 0 0 19px;
+            &_mobile {
+                max-width: 100%;
+            }
+        }
+    }
+    &_right {
+        .number {
+            display: flex;
+            position: relative;
+            width: 200px;
+            align-items: center;
+            img {
+                position: absolute;
+                left: -50px;
+                max-width: 30%;
+            }
+            p {
+                font-family: 'DIN Condensed';
+                font-size: 24px;
+                font-style: normal;
+                text-transform: uppercase;
+            }
+        }
+        button {
+            border: none;
+            background-color: #c6091c;
+            padding: 20px 50px;
+            color: white;
+            font-family: 'DIN Condensed';
+            font-size: 24px;
+            font-style: normal;
+            text-transform: uppercase;
+        }
+    }
+}

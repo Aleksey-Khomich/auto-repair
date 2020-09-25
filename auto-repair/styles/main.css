@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -341,10 +342,212 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'DIN Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/DIN_Condensed/15775.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Algeria Two';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Algeria_Two/11894.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Helvetica_Neue/HelveticaNeueCyr-Medium.ttf") format("truetype");
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 24px 50px 31px;
+  border-bottom: 5px solid #ddcfb3;
+}
+
+.header_left, .header_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_left .logo {
+  width: 172px;
+  height: 54px;
+  background: url("/images/header/Без названия.png") center no-repeat;
+  background-size: 170px;
+}
+
+.header_left .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 72px;
+  padding: 4px 0 0 19px;
+}
+
+.header_left .nav_mobile {
+  max-width: 100%;
+}
+
+.header_right .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_right .number img {
+  position: absolute;
+  left: -50px;
+  max-width: 30%;
+}
+
+.header_right .number p {
+  font-family: 'DIN Condensed';
+  font-size: 24px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.header_right button {
+  border: none;
+  background-color: #c6091c;
+  padding: 20px 50px;
+  color: white;
+  font-family: 'DIN Condensed';
+  font-size: 24px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.promo {
+  margin: 0 auto;
+  padding: 180px 30px 0;
+  background: url("/images/promo/top-bg1.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.promo .center_title h1 {
+  position: relative;
+  font-family: 'Algeria Two';
+  font-size: 74px;
+  line-height: 88px;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 60px;
+  letter-spacing: 0.8px;
+  color: white;
+}
+
+.promo .center_title h1::after {
+  content: '';
+  position: absolute;
+  width: 21%;
+  left: 50%;
+  margin-left: -10.5%;
+  height: 3px;
+  background-color: #f3f3f3;
+  bottom: 0;
+}
+
+.promo .box_info_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promo .box_info_btns p {
+  text-align: center;
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  padding: 40px 0 50px;
+  color: white;
+}
+
+.promo .box_info_btns .box_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-bottom: 170px;
+  border-bottom: 1px solid #ddcfb3;
+}
+
+.promo .box_info_btns .box_btns::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #ddcfb3;
+  bottom: 17px;
+}
+
+.promo .box_info_btns .box_btns button {
+  border: none;
+  background-color: #c6091c;
+  padding: 20px 70px;
+  color: white;
+  font-family: 'DIN Condensed';
+  font-size: 24px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.promo .box_info_btns .box_btns button:nth-last-child(1) {
+  margin-left: 70px;
 }
 /*# sourceMappingURL=main.css.map */
