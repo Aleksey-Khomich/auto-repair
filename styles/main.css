@@ -861,7 +861,7 @@ img {
 .contact_form {
   padding-top: 214px;
   padding-bottom: 238px;
-  background: url("/images/form/form-bg.jpg") no-repeat;
+  background: url("../images/form/form-bg.jpg") no-repeat;
   background-size: cover;
 }
 
