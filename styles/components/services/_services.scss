@@ -33,6 +33,7 @@
         background-size: cover;
         .services_item {
             display: flex;
+            justify-content: center;
             &_image {
                 padding-right: 25px;
                 font-size: 0;
@@ -64,7 +65,7 @@
                     line-height: 24px;
                     color: white;
                 }
-                .prices {
+                .services_prices {
                     font-family: 'DIN Condensed';
                     font-size: 38px;
                     line-height: 1;

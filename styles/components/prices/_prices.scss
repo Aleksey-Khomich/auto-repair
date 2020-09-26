@@ -1,0 +1,93 @@
+.prices {
+    background: url('../images/prices/texture.jpg');
+    background-size: 100%;
+    background-position: center 0;
+    padding-top: 94px;
+    padding-bottom: 105px;
+    h3 {
+        font-family: 'Algeria Two';
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: normal;
+        text-align: center;
+        color: #181818;
+        margin-top: 0;
+        margin-bottom: 75px;
+    }
+    &_block {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 727px;
+        overflow: hidden;
+        &_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                border-bottom: 3px solid #e1ddc3;
+                font-weight: bold;
+                padding-bottom: 10px;
+                padding-top: 0;
+                font-size: 16px;
+                min-height: 43px;
+                line-height: 20px;
+                width: 130px;
+                text-align: center;
+                &:first-child {
+                    width: 360px;
+                }
+            }
+        }
+        &_table {
+            h5 {
+                font-family: "DIN Condensed";
+                text-transform: uppercase;
+                color: #1e1e1e;
+                margin: 0;
+                padding-top: 33px;
+                padding-bottom: 15px;
+                padding-left: 3px;
+                font-size: 28px;
+                line-height: 1;
+                font-weight: normal;
+            }
+            .line_block {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                    font-family: 'Helvetica Neue';
+                    font-style: inherit;
+                    font-weight: 200;
+                    border-top: 1px solid rgb(172, 159, 159);
+                    padding: 10px 0 10px 3px;
+                    font-size: 18px;
+                    justify-content: flex-start;
+                    text-align: left;
+                    min-height: 43px;
+                    line-height: 20px;
+                    width: 130px;
+                    &:first-child {
+                        width: 360px;
+                    }
+                }
+            }
+        }
+        .btn_more_prices {
+            display: flex;
+            justify-content: center;
+            min-width: 260px;
+            min-height: 63px;
+            line-height: 63px;
+            font-family: "DIN Condensed";
+            font-size: 24px;
+            margin: 0 auto;
+            margin-top: 60px;
+            text-transform: uppercase;
+            background: transparent;
+            border: 3px solid #e1ddc3;
+        }
+    }
+}
