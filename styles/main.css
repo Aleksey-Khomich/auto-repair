@@ -878,4 +878,37 @@ img {
   padding-right: 25px;
   padding-left: 40px;
 }
+
+.footer {
+  font-family: 'Helvetica Neue';
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+  max-width: 1800px;
+  padding: 24px 50px 31px;
+  margin: 0 auto;
+}
+
+.footer img {
+  width: 215px;
+  height: 90px;
+}
+
+.footer address {
+  font-style: normal;
+}
 /*# sourceMappingURL=main.css.map */

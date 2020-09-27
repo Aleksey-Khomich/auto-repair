@@ -1,0 +1,26 @@
+.footer {
+    font-family: 'Helvetica Neue';
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    max-width: 1800px;
+    padding: 24px 50px 31px;    
+    margin: 0 auto;
+    &__text {
+        //justify-self: start;
+    }
+    img {
+        width: 215px;
+        height: 90px;
+        //justify-self: center;
+    }
+    address {
+        //justify-self: end;
+        font-style: normal;
+    }
+}
