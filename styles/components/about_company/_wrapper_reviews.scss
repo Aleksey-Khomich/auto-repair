@@ -1,0 +1,12 @@
+.background_reviews {
+    background: url('../images/scheme_work/texture2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    overflow: hidden;
+    .wrapper_reviews {
+        margin: 0 auto;
+        max-width: 1320px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
