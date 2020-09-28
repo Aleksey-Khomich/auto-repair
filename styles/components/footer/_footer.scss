@@ -3,24 +3,25 @@
     color: #fff;
     font-size: 14px;
     line-height: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     background-color: #000;
-    max-width: 1800px;
-    padding: 24px 50px 31px;    
-    margin: 0 auto;
-    &__text {
-        //justify-self: start;
+    position: relative;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1800px;
+        padding: 50px;    
+        margin: 0 auto;
     }
-    img {
+    &__logo {
         width: 215px;
         height: 90px;
-        //justify-self: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
     address {
-        //justify-self: end;
         font-style: normal;
     }
 }

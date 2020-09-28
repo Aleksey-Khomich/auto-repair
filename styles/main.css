@@ -430,6 +430,7 @@ img {
 }
 
 .header_right .number {
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,12 +439,17 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 .header_right .number img {
   position: absolute;
   left: -50px;
   max-width: 30%;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 .header_right .number p {
@@ -453,15 +459,39 @@ img {
   text-transform: uppercase;
 }
 
+.header_right .number:hover {
+  color: #c6091c;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.header_right .number:hover img {
+  opacity: .7;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
 .header_right button {
   border: none;
   background-color: #c6091c;
-  padding: 20px 50px;
-  color: white;
+  border: 6px solid #c6091c;
+  padding: 17px 47px;
+  color: #fff;
   font-family: 'DIN Condensed';
   font-size: 24px;
   font-style: normal;
   text-transform: uppercase;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.header_right button:hover {
+  color: #000;
+  cursor: pointer;
+  background-color: #fff;
+  border: 6px solid #000;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 .promo {
@@ -539,16 +569,29 @@ img {
 .promo .box_info_btns .box_btns button {
   border: none;
   background-color: #c6091c;
-  padding: 20px 70px;
+  border: 6px solid #c6091c;
+  padding: 20px 0;
   color: white;
   font-family: 'DIN Condensed';
   font-size: 24px;
   font-style: normal;
   text-transform: uppercase;
+  width: 300px;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 .promo .box_info_btns .box_btns button:nth-last-child(1) {
   margin-left: 70px;
+}
+
+.promo .box_info_btns .box_btns button:hover {
+  color: #c6091c;
+  cursor: pointer;
+  background-color: #fff;
+  border: 6px solid #c6091c;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 .our_advantages {
@@ -663,6 +706,16 @@ img {
   line-height: 1;
   color: white;
   text-transform: uppercase;
+  text-decoration: underline;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.services_tabs a:hover {
+  color: #e1ddc3;
+  text-decoration: none;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 .services_contents {
@@ -731,11 +784,23 @@ img {
   text-transform: uppercase;
   border: none;
   background-color: #c6091c;
+  border: 6px solid #c6091c;
   padding: 16px 45px;
   text-align: center;
   color: #fff;
   text-decoration: none;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
   margin-bottom: 239px;
+}
+
+.services_contents .services_item_text_box button:hover {
+  color: #c6091c;
+  cursor: pointer;
+  background-color: #fff;
+  border: 6px solid #c6091c;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 .prices {
@@ -854,8 +919,17 @@ img {
   margin: 0 auto;
   margin-top: 60px;
   text-transform: uppercase;
-  background: transparent;
+  background-color: transparent;
   border: 3px solid #e1ddc3;
+  -webkit-transition: .5 all ease;
+  transition: .5 all ease;
+}
+
+.prices_block .btn_more_prices:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: .5 all ease;
+  transition: .5 all ease;
 }
 
 .contact_form {
@@ -1064,10 +1138,22 @@ img {
   text-transform: uppercase;
   border: none;
   background-color: #c6091c;
+  border: 6px solid #c6091c;
   font-size: 24px;
   text-align: center;
   color: #fff;
   text-decoration: none;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.contact_form .feedback_form_right .form_feedback button:hover {
+  color: #c6091c;
+  cursor: pointer;
+  background-color: #fff;
+  border: 6px solid #c6091c;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
 }
 
 .scheme_of_work {
@@ -1420,6 +1506,11 @@ img {
   color: #fff;
   font-size: 14px;
   line-height: 16px;
+  background-color: #000;
+  position: relative;
+}
+
+.footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1433,15 +1524,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #000;
   max-width: 1800px;
-  padding: 24px 50px 31px;
+  padding: 50px;
   margin: 0 auto;
 }
 
-.footer img {
+.footer__logo {
   width: 215px;
   height: 90px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .footer address {

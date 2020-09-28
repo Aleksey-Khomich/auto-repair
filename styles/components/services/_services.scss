@@ -25,6 +25,13 @@
             line-height: 1;
             color: white;
             text-transform: uppercase;
+            text-decoration: underline;
+            transition: .3s all ease;
+            &:hover {
+                color: #e1ddc3;
+                text-decoration: none;
+                transition: .3s all ease;
+            }
         }
     }
     &_contents {
@@ -78,11 +85,20 @@
                     text-transform: uppercase;
                     border: none;
                     background-color: #c6091c;
+                    border: 6px solid #c6091c;
                     padding: 16px 45px;
                     text-align: center;
                     color: #fff;
                     text-decoration: none;
+                    transition: .3s all ease;
                     margin-bottom: 239px;
+                    &:hover {
+                        color: #c6091c;
+                        cursor: pointer;
+                        background-color: #fff;
+                        border: 6px solid #c6091c;
+                        transition: .3s all ease;
+                    }
                 }
             }
         }

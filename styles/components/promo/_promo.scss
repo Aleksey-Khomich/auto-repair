@@ -56,14 +56,24 @@
             button {
                 border: none;
                 background-color: #c6091c;
-                padding: 20px 70px;
+                border: 6px solid #c6091c;
+                padding: 20px 0;
                 color: white;
                 font-family: 'DIN Condensed';
                 font-size: 24px;
                 font-style: normal;
                 text-transform: uppercase;
+                width: 300px;
+                transition: .3s all ease;
                 &:nth-last-child(1) {
                     margin-left: 70px;
+                }
+                &:hover {
+                    color: #c6091c;
+                    cursor: pointer;
+                    background-color: #fff;
+                    border: 6px solid #c6091c;
+                    transition: .3s all ease;
                 }
             }
         }
