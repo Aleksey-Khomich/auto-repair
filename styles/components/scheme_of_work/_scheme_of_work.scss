@@ -1,0 +1,46 @@
+.scheme_of_work {
+    background: url('../images/scheme_work/texture2.jpg');
+    background-size: cover;
+    padding-top: 122px;
+    padding-bottom: 190px;
+    .steps {
+        margin: 0 auto;
+        max-width: 1320px;
+        padding-left: 20px;
+        padding-right: 20px;
+        h2 {
+            font-family: 'Algeria Two';
+            font-size: 64px;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 70px;
+            line-height: 1;
+        }
+        &_box {
+            display: flex;
+            font-family: 'Helvetica Neue';
+            &_list {
+                position: relative;
+                width: 48.5%;
+                border-top: 3px solid #e1ddc3;
+                border-bottom: 3px solid #e1ddc3;
+                .step {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 19px;
+                    padding-bottom: 19px;
+                    border-bottom: 1px solid #e1ddc3;
+                    &_text {
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                }
+            }
+            &_about {
+                margin-left: 10.5%;
+                width: 42.5%;
+                max-width: 500px;
+            }
+        }
+    }
+}
