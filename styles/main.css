@@ -877,5 +877,196 @@ img {
   padding-bottom: 35px;
   padding-right: 25px;
   padding-left: 40px;
+  font-family: 'Helvetica Neue';
+}
+
+.contact_form .feedback_form_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-right: 5px solid #e1ddc3;
+  width: 48.3%;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.contact_form .feedback_form_left h3 {
+  text-transform: uppercase;
+  font-family: 'DIN Condensed';
+  font-weight: normal;
+  font-size: 53px;
+  line-height: 63px;
+  color: #f9f9f2;
+  margin: 0;
+}
+
+.contact_form .feedback_form_left .form_contacts {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+}
+
+.contact_form .feedback_form_left .form_contacts p:nth-child(1) {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.contact_form .feedback_form_left .form_contacts p:nth-child(3) {
+  position: relative;
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.contact_form .feedback_form_left .form_contacts p:nth-child(3) img {
+  margin-left: 8px;
+  margin-bottom: -3px;
+  max-width: 5.5%;
+  top: -10%;
+  left: 51%;
+  position: absolute;
+}
+
+.contact_form .feedback_form_right {
+  padding-left: 53px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  width: 51.4%;
+}
+
+.contact_form .feedback_form_right .feedback_form_text .form_title {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: 'DIN Condensed';
+}
+
+.contact_form .feedback_form_right .feedback_form_text p {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.contact_form .feedback_form_right .form_feedback {
+  width: 100%;
+}
+
+.contact_form .feedback_form_right .form_feedback .box_up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact_form .feedback_form_right .form_feedback .box_up_input {
+  position: relative;
+  width: 47%;
+}
+
+.contact_form .feedback_form_right .form_feedback .box_up_input_label {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+}
+
+.contact_form .feedback_form_right .form_feedback .box_up_input input {
+  width: 100%;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 0;
+  line-height: 18px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+  max-height: 48px;
+}
+
+.contact_form .feedback_form_right .form_feedback .box_down {
+  padding-top: 26px;
+}
+
+.contact_form .feedback_form_right .form_feedback .box_down_tilte {
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.contact_form .feedback_form_right .form_feedback .box_down_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_form .feedback_form_right .form_feedback .box_down_line_input {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 18px;
+  line-height: 1;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.contact_form .feedback_form_right .form_feedback .box_down_line label {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 18px;
+  line-height: 1;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.contact_form .feedback_form_right .form_feedback button {
+  margin-top: 32px;
+  width: 100%;
+  min-height: 61px;
+  height: 61px;
+  letter-spacing: 0.9px;
+  line-height: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'DIN Condensed';
+  text-transform: uppercase;
+  border: none;
+  background-color: #c6091c;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
