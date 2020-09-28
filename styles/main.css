@@ -1107,6 +1107,24 @@ img {
   border-bottom: 3px solid #e1ddc3;
 }
 
+.scheme_of_work .steps_box_list::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e1ddc3;
+  top: -8px;
+}
+
+.scheme_of_work .steps_box_list::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e1ddc3;
+  bottom: -8px;
+}
+
 .scheme_of_work .steps_box_list .step {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1119,15 +1137,193 @@ img {
   border-bottom: 1px solid #e1ddc3;
 }
 
+.scheme_of_work .steps_box_list .step_image_1, .scheme_of_work .steps_box_list .step_image_2, .scheme_of_work .steps_box_list .step_image_3, .scheme_of_work .steps_box_list .step_image_4, .scheme_of_work .steps_box_list .step_image_5 {
+  font-family: 'Algeria Two';
+  color: #181818;
+  font-size: 100px;
+  line-height: 1;
+  text-align: center;
+  width: 137px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-position: center center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.scheme_of_work .steps_box_list .step_image_1 {
+  background-image: url("../images/scheme_work/list/icon1.png");
+}
+
+.scheme_of_work .steps_box_list .step_image_2 {
+  background-image: url("../images/scheme_work/list/icon2.png");
+}
+
+.scheme_of_work .steps_box_list .step_image_3 {
+  background-image: url("../images/scheme_work/list/icon3.png");
+}
+
+.scheme_of_work .steps_box_list .step_image_4 {
+  background-image: url("../images/scheme_work/list/icon4.png");
+}
+
+.scheme_of_work .steps_box_list .step_image_5 {
+  background-image: url("../images/scheme_work/list/icon5.png");
+}
+
 .scheme_of_work .steps_box_list .step_text {
+  padding-left: 5px;
+  padding-right: 40px;
   font-size: 18px;
   line-height: 21px;
+}
+
+.scheme_of_work .steps_box_list .step_text h4 {
+  font-family: "DIN Condensed";
+  font-weight: normal;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 9px;
 }
 
 .scheme_of_work .steps_box_about {
   margin-left: 10.5%;
   width: 42.5%;
   max-width: 500px;
+}
+
+.scheme_of_work .steps_box_about .about_director {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'DIN Condensed';
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 45px;
+}
+
+.scheme_of_work .steps_box_about .about_director img {
+  width: 179px;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 33px;
+  border: 5px solid white;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.scheme_of_work .steps_box_about .about_director h3 {
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.scheme_of_work .steps_box_about .about_text {
+  max-width: 440px;
+  background-image: url("../images/scheme_work/icon-quote.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center center;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 36px;
+}
+
+.scheme_of_work .steps_box_about .about_text p:first-child {
+  margin-bottom: 18px;
+}
+
+.scheme_of_work .steps_box_about .about_text .name_director {
+  font-family: "DIN Condensed";
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-bottom: 10px;
+  margin-top: 36px;
+}
+
+.scheme_of_work .guaranties {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 125px;
+}
+
+.scheme_of_work .guaranties h2 {
+  font-family: 'Algeria Two';
+  font-size: 64px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 77px;
+  line-height: 1;
+}
+
+.scheme_of_work .guaranties_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.scheme_of_work .guaranties_box_left, .scheme_of_work .guaranties_box_right {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 49%;
+  border-bottom: 3px solid #e1ddc3;
+  border-top: 3px solid #e1ddc3;
+  padding-top: 19px;
+  padding-bottom: 7px;
+  padding-left: 21px;
+}
+
+.scheme_of_work .guaranties_box_left svg, .scheme_of_work .guaranties_box_right svg {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.scheme_of_work .guaranties_box_left::after, .scheme_of_work .guaranties_box_right::after {
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #e1ddc3;
+  bottom: -8px;
+}
+
+.scheme_of_work .guaranties_box_left_text, .scheme_of_work .guaranties_box_right_text {
+  padding-left: 47px;
+}
+
+.scheme_of_work .guaranties_box_left_text h3, .scheme_of_work .guaranties_box_right_text h3 {
+  font-size: 24px;
+  font-family: "DIN Condensed";
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.scheme_of_work .guaranties_box_left_text p, .scheme_of_work .guaranties_box_right_text p {
+  font-family: 'Helvetica Neue';
+  font-size: 17px;
+  line-height: 22px;
+  padding-right: 32px;
+  margin: 18px 0;
 }
 
 .footer {
