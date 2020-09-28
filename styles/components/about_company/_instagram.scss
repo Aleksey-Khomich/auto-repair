@@ -1,0 +1,21 @@
+.instargam {
+    margin-top: 153px;
+    margin-bottom: 56px;
+    h2 {
+        font-family: 'Algeria Two';
+        font-size: 64px;
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 50px;
+        line-height: 1;
+        text-align: center;
+    }
+    &_box {
+        display: flex;
+        .element {
+            width: 25%;
+            height: 300px;
+            border-right: 2px solid white;
+        }
+    }
+}

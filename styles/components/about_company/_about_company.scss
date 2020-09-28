@@ -1,0 +1,51 @@
+.about_company {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 100px;
+    background: url('../images/scheme_work/texture2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    overflow: hidden;
+    &_wrapper {
+        margin: 0 auto;
+        max-width: 1320px;
+        padding-left: 20px;
+        padding-right: 20px;
+        .reviews_about {
+            display: flex;
+            &_image {
+                position: relative;
+                flex-shrink: 0;
+                padding-right: 28px;
+                border-right: 5px solid #e1ddc3;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: -11px;
+                    height: 100%;
+                    width: 1px;
+                    background-color: #e1ddc3;
+                }
+            }
+            &_text {
+                font-size: 18px;
+                line-height: 24px;
+                padding-left: 36px;
+                padding-right: 110px;
+                h4 {
+                    margin-top: 0;
+                    margin-bottom: 18px;
+                    font-family: 'DIN Condensed';
+                    text-transform: uppercase;
+                    font-size: 28px;
+                    line-height: 32px;
+                }
+                p {
+                    font-family: 'Helvetica Neue';
+                    margin-bottom: 18px;
+                }
+            }
+        }
+    }
+}

@@ -1326,6 +1326,95 @@ img {
   margin: 18px 0;
 }
 
+.about_company {
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 100px;
+  background: url("../images/scheme_work/texture2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center 0;
+  overflow: hidden;
+}
+
+.about_company_wrapper {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about_company_wrapper .reviews_about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about_company_wrapper .reviews_about_image {
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-right: 28px;
+  border-right: 5px solid #e1ddc3;
+}
+
+.about_company_wrapper .reviews_about_image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -11px;
+  height: 100%;
+  width: 1px;
+  background-color: #e1ddc3;
+}
+
+.about_company_wrapper .reviews_about_text {
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 36px;
+  padding-right: 110px;
+}
+
+.about_company_wrapper .reviews_about_text h4 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-family: 'DIN Condensed';
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.about_company_wrapper .reviews_about_text p {
+  font-family: 'Helvetica Neue';
+  margin-bottom: 18px;
+}
+
+.instargam {
+  margin-top: 153px;
+  margin-bottom: 56px;
+}
+
+.instargam h2 {
+  font-family: 'Algeria Two';
+  font-size: 64px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 50px;
+  line-height: 1;
+  text-align: center;
+}
+
+.instargam_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.instargam_box .element {
+  width: 25%;
+  height: 300px;
+  border-right: 2px solid white;
+}
+
 .footer {
   font-family: 'Helvetica Neue';
   color: #fff;
