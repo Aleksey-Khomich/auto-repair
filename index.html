@@ -21,9 +21,53 @@
                 <img src="./images/header/1976104.svg" alt="phone">
                 <p>+7 (495) 677-96-09</p>
             </a>
-            <button class="cost_calculation">
+            <button class="cost_calculation popup_cost_calculation">
                 Расчет стоимости
             </button>
+            <div class="popup_form_wrapper">
+                <div class="popup_form">
+                    <svg class="close_popup" width='35px' height='35px' viewBox="0 0 38 37" id="close-btn" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37.349 35.642l-.697.716L19.013 19.21 1.708 37.005l-.723-.703L18.29 18.507.651 1.358l.698-.716L18.987 17.79 36.292-.005l.723.703L19.71 18.493l17.639 17.149z"></path>
+                    </svg>
+                    <div class="popup_form_feedback">
+                        <h3>Оцените стоимость ремонта прямо сейчас</h3>
+                        <p>Загрузите фото области, которая нуждается в ремонте, и мы дадим предварительную оценку уже сегодня:</p>
+                        <div class="popup_form_feedback_contacts">
+                            <p>Отправить фото через WHATSAPP
+                                    <img src="./images/form/whatsapp.png" alt="whatsapp" width="30" height="30">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="popup_form_feed">
+                        <p>Отправить фото через сайт</p>
+                        <form class="form_feedback">
+                            <div class="box_up">
+                                <div class="box_up_input">
+                                    <div class="box_up_input_label">Как вас зовут?</div>
+                                    <input type="text" name="name">
+                                </div>
+                                <div class="box_up_input">
+                                    <div class="box_up_input_label">Контактный телефон</div>
+                                    <input type="text" name="phone">
+                                </div>
+                            </div>
+                            <div class="box_down">
+                                <div class="box_down_tilte">Загрузите до 5 фото</div>
+                                <div class="box_down_line">
+                                    <div class="box_down_line_input"></div>
+                                    <label for="upload">Загрузить фото</label>
+                                </div>
+                            </div>
+                            <button>Оценить стоимость</button>
+                        </form>
+                    </div>
+                    <div class="popup_form_feedback_contacts">
+                        <p>Или просто позвоните нам</p>
+                        <p>+7 (495) 677-96-09</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -35,7 +79,7 @@
                 <p>Предварительно оцениваем стоимость ремонта<br> по фотографиям и даем гарантии на проделанную работу
                 </p>
                 <div class="box_btns">
-                    <button>Услуги и цены</button>
+                    <button class="js_scroll_prices_btn">Услуги и цены</button>
                     <button>Оценка стоимости по фото</button>
                 </div>
             </div>
@@ -293,13 +337,13 @@
         </section>
         <section class="prices">
             <h3>Цены</h3>
-            <div class="prices_block">
-                <div class="prices_block_header">
+            <div class="prices_block js_prices_block">
+                <div class="prices_block_header js_prices_block_header">
                     <span>Услуга</span>
                     <span>Цена</span>
                     <span>У официального дилера</span>
                 </div>
-                <div class="prices_block_table">
+                <div class="prices_block_table js_prices_block_table">
                     <h5>Локальный ремонт</h5>
                     <div class="line_block">
                         <span>Удаление сколов</span>
@@ -317,7 +361,7 @@
                         <span>от 7000 р.</span>
                     </div>
                 </div>
-                <div class="prices_block_table">
+                <div class="prices_block_table js_prices_block_table">
                     <h5>Покраска</h5>
                     <div class="line_block">
                         <span>Полная покраска</span>
@@ -325,7 +369,7 @@
                         <span>от 7000 р.</span>
                     </div>
                     <div class="line_block">
-                        <span>Бампер задний</span>
+                        <span class='js_servies'>Бампер задний</span>
                         <span>от 5000 р.</span>
                         <span>от 7000 р.</span>
                     </div>
@@ -365,8 +409,162 @@
                         <span>от 7000 р.</span>
                     </div>
                 </div>
-                <button class="btn_more_prices">Развернуть</button>
+                <div class="prices_block_table js_prices_block_table">
+                    <h5>Замены</h5>
+                    <div class="line_block">
+                        <span>Радиатор</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Фара</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Фонарь</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Бампер передний</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Бампер задний</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Дверь передняя</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Дверь задняя</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Капот</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Багажник</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Крыло переднее</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Крыло заднее</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Крыша</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Стекло лобовое</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Стекло двери</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Стекло заднее</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                </div>
+                <div class="prices_block_table js_prices_block_table">
+                    <h5>Полировка</h5>
+                    <div class="line_block">
+                        <span>Бампер передний</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Бампер задний</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Крыло переднее</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Крыло заднее</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Дверь передняя</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Дверь задняя</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Капот и крыша</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Багажник</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Весь автомобиль</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Фонарь</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Фара(с нанесением защитного покрытия</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                </div>
+                <div class="prices_block_table js_prices_block_table">
+                    <h5>Прочее</h5>
+                    <div class="line_block">
+                        <span>Ремонт бампера</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Нанесение защитного покрытия (нано-лак)</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                    <div class="line_block">
+                        <span>Восстановление геометрии кузова на стапеле</span>
+                        <span>от 5000 р.</span>
+                        <span>от 7000 р.</span>
+                    </div>
+                </div>
             </div>
+            <button class="btn_more_prices js_btn_more_prices">Развернуть</button>
         </section>
         <section class="contact_form">
             <div class="feedback_form">
@@ -592,17 +790,17 @@
                     <h2>Мы в Instagram</h2>
                     <div class="instargam_box">
                         <div class="element">
-                            <img src="../images/instargam/instagram.png" alt="logo">
+                            <img src="./images/instargam/instagram.png" alt="logo">
                             <span>#nekrashen</span>
                         </div>
                         <div class="element">
-                            <img src="../images/instargam/instacar4.jpg" alt="car">
+                            <img src="./images/instargam/instacar4.jpg" alt="car">
                         </div>
                         <div class="element">
-                            <img src="../images/instargam/instacar5.jpg" alt="car">
+                            <img src="./images/instargam/instacar5.jpg" alt="car">
                         </div>
                         <div class="element">
-                            <img src="../images/instargam/instacar6.jpg" alt="car">
+                            <img src="./images/instargam/instacar6.jpg" alt="car">
                         </div>
                     </div>
                 </section>
@@ -638,5 +836,8 @@
         </div>
     </footer>
 </body>
+<script src="js/popup.js"></script>
+<script src="js/scroll_prices.js"></script>
+<script src="js/price-extend.js"></script>
 
 </html>
