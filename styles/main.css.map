@@ -17,6 +17,7 @@
         "components/about_company/_about_company.scss",
         "components/about_company/_instagram.scss",
         "components/about_company/_reviews.scss",
+        "components/map/_map.scss",
         "components/footer/_footer.scss"
     ],
     "names": [],

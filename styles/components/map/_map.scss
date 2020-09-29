@@ -1,0 +1,45 @@
+.map {
+    height: 655px;
+    position: relative;
+    background-color: rgb(190, 152, 250);
+    h2 {
+        font-family: 'Algeria Two';
+        font-size: 48px;
+        font-weight: normal;
+        line-height: 1;
+        padding: 25px 0;
+    }
+    .contacts {
+        position: absolute;
+        top: 50%;
+        left: 8rem;
+        transform: translateY(-50%);
+        width: 436px;
+        z-index: 5;
+        box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.28);
+        background-color: #fff;
+        padding: 25px 15px;
+        div {
+            border-top: 2px solid #e1ddc3;
+            padding: 25px 0;
+        }
+        h3 {
+            font-family: 'Helvetica Neue Thin';
+            font-size: 18px;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+        a {
+            font-family: 'Helvetica Neue Light';
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+            line-height: 34px;
+        }
+        p {
+            font-family: 'Helvetica Neue Light';
+            font-size: 24px;
+            line-height: 34px;
+        }
+    }
+}

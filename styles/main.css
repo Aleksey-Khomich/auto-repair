@@ -363,6 +363,20 @@ template {
   src: url("./fonts/Helvetica_Neue/HelveticaNeueCyr-Medium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'Helvetica Neue Thin';
+  font-style: thin;
+  font-weight: 200;
+  src: url("./fonts/Helvetica_Neue/HelveticaNeueCyr-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  font-style: thin;
+  font-weight: 300;
+  src: url("./fonts/Helvetica_Neue/HelveticaNeueCyr-Light.ttf") format("truetype");
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1794,6 +1808,60 @@ img {
 
 .reviews {
   padding-top: 100px;
+}
+
+.map {
+  height: 655px;
+  position: relative;
+  background-color: #be98fa;
+}
+
+.map h2 {
+  font-family: 'Algeria Two';
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 1;
+  padding: 25px 0;
+}
+
+.map .contacts {
+  position: absolute;
+  top: 50%;
+  left: 8rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 436px;
+  z-index: 5;
+  -webkit-box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.28);
+          box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.28);
+  background-color: #fff;
+  padding: 25px 15px;
+}
+
+.map .contacts div {
+  border-top: 2px solid #e1ddc3;
+  padding: 25px 0;
+}
+
+.map .contacts h3 {
+  font-family: 'Helvetica Neue Thin';
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.map .contacts a {
+  font-family: 'Helvetica Neue Light';
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.map .contacts p {
+  font-family: 'Helvetica Neue Light';
+  font-size: 24px;
+  line-height: 34px;
 }
 
 .footer {
