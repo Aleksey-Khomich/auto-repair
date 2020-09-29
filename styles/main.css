@@ -1807,7 +1807,75 @@ img {
 }
 
 .reviews {
-  padding-top: 100px;
+  padding: 140px 0 100px;
+}
+
+.reviews h2 {
+  font-family: 'Algeria Two';
+  font-size: 64px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 50px;
+  line-height: 1;
+  text-align: center;
+}
+
+.reviews__slider-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 915px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+.reviews__slider-slide__image {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 45px;
+}
+
+.reviews__slider-slide__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__slider-slide__text {
+  font-family: 'Helvetica Neue Light';
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.reviews__slider-slide__name {
+  font-family: 'DIN Condensed';
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 9px;
+}
+
+.reviews__slider-slide__car {
+  font-family: 'Helvetica Neue Light';
+  font-size: 18px;
+  text-align: center;
 }
 
 .map {
