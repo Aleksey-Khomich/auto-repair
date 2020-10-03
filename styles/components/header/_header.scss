@@ -13,10 +13,9 @@
     &_left {
         display: flex;
         .logo {
-            width: 172px;
-            height: 54px;
-            background: url('../images/header/Без\ названия.png') center no-repeat;
-            background-size: 170px;
+            font-family: 'Algeria Two';
+            font-size: 36px;
+            letter-spacing: 2px;
         }
         .nav {
             display: flex;

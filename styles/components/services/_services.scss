@@ -16,17 +16,21 @@
     &_tabs {
         border-top: 3px solid #e1ddc3;
         border-bottom: 3px solid #e1ddc3;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         padding: 20px 0;
-        a {
+        .services_tab {
             font-family: "DIN Condensed";
-            margin-right: 60px;
             font-size: 24px;
-            line-height: 1;
             color: white;
             text-transform: uppercase;
             text-decoration: underline;
+            cursor: pointer;
+            max-width: 370px;
             transition: .3s all ease;
+            margin: 0 30px;
             &:hover {
                 color: #e1ddc3;
                 text-decoration: none;
@@ -39,7 +43,7 @@
         background: url('../images/services/top-bg2.jpg') no-repeat center;
         background-size: cover;
         .services_item {
-            display: flex;
+            display: none;
             justify-content: center;
             &_image {
                 padding-right: 25px;
@@ -49,21 +53,13 @@
             &_text_box {
                 width: 30%;
                 text-align: left;
-                .subtitle {
-                    color: #ddcfb3;
-                    font-size: 18px;
-                    line-height: 24px;
-                    margin-bottom: 15px;
-                    font-family: 'Helvetica Neue';
-                }
-                h4 {
-                    margin-top: 0;
-                    font-family: 'DIN Condensed';
+                h3 {
+                    font-family: "DIN Condensed";
+                    color: #fff;
                     text-transform: uppercase;
-                    color: white;
                     font-size: 42px;
                     line-height: 50px;
-                    margin-bottom: 15px;
+                    margin-bottom: 15px; 
                 }
                 p {
                     font-family: 'Helvetica Neue';
@@ -72,35 +68,10 @@
                     line-height: 24px;
                     color: white;
                 }
-                .services_prices {
-                    font-family: 'DIN Condensed';
-                    font-size: 38px;
-                    line-height: 1;
-                    margin-bottom: 30px;
-                    color: white;
-                }
-                button {
-                    font-family: 'DIN Condensed';
-                    font-size: 24px;
-                    text-transform: uppercase;
-                    border: none;
-                    background-color: #c6091c;
-                    border: 6px solid #c6091c;
-                    padding: 16px 45px;
-                    text-align: center;
-                    color: #fff;
-                    text-decoration: none;
-                    transition: .3s all ease;
-                    margin-bottom: 239px;
-                    &:hover {
-                        color: #c6091c;
-                        cursor: pointer;
-                        background-color: #fff;
-                        border: 6px solid #c6091c;
-                        transition: .3s all ease;
-                    }
-                }
             }
+        }
+        .opened {
+            display: flex;
         }
     }
 }
