@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>demo</title>
+    <title>АВАНГАРД</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 
@@ -12,16 +13,17 @@
     <header class="header">
         <div class="header_left">
             <div class="logo">Авангард</div>
-            <nav class="nav">
-                <img class="nav_mobile" src="./images/header/Hamburger_icon.svg.png" alt="mobile_nav">
-            </nav>
+            
         </div>
         <div class="header_right">
             <a href="tel:74956779609" class="number">
                 <img src="./images/header/1976104.svg" alt="phone">
                 <p>+7 (495) 677-96-09</p>
             </a>
-            <button class="cost_calculation popup_cost_calculation">
+            <nav class="nav">
+                <img class="nav_mobile" src="./images/header/Hamburger_icon.svg.png" alt="mobile_nav">
+            </nav>
+            <!-- <button class="cost_calculation popup_cost_calculation">
                 Расчет стоимости
             </button>
             <div class="popup_form_wrapper">
@@ -66,7 +68,7 @@
                         <p>+7 (495) 677-96-09</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </header>
 
@@ -77,8 +79,8 @@
                 <h1>Ремонт рулевых механизмов и тормозной системы<br>с гарантией  до 1 года</h1>
             </div>
             <div class="box_btns">
-                <button class="js_scroll_prices_btn">Услуги и цены</button>
-                <button>Оценка стоимости по фото</button>
+                <button class="js_scroll_prices_btn">Услуги</button>
+                <button>Цены</button>
             </div>
         </section>
 
@@ -297,7 +299,7 @@
         <section class="services">
             <h2>Услуги</h2>
             <div class="services_tabs" id="tabs-container">
-                <div href="#" data-tab="one" class="services_tab">Диагностика рулевой рейки</div>
+                <div href="#" data-tab="one" class="services_tab opened">Диагностика рулевой рейки</div>
                 <div href="#" data-tab="two" class="services_tab">Снятие и установка рулевой рейки с автомобиля</div>
                 <div href="#" data-tab="three" class="services_tab">Восстановление демонтированных рулевых реек</div>
             </div>
@@ -338,230 +340,54 @@
                 <div class="prices_block_header js_prices_block_header">
                     <span>Услуга</span>
                     <span>Цена</span>
-                    <span>У официального дилера</span>
                 </div>
                 <div class="prices_block_table js_prices_block_table">
-                    <h5>Локальный ремонт</h5>
                     <div class="line_block">
-                        <span>Удаление сколов</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
+                        <span class="capture">снятие и установка (монтаж/демонтаж рулевой рейки)</span>
+                        <span class="cost">130-150 BYN</span>
                     </div>
                     <div class="line_block">
-                        <span>Удаление царапин</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
+                        <span class="capture">комплекс всех работ:<br>
+                            (стоимость не изменится вне зависимости от необходимого количества работ в Вашем конкретном случае)
+                            </span>
+                        <span class="cost">220 BYN</span>
                     </div>
                     <div class="line_block">
-                        <span>Локальная покраска</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                </div>
-                <div class="prices_block_table js_prices_block_table">
-                    <h5>Покраска</h5>
-                    <div class="line_block">
-                        <span>Полная покраска</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
+                        <span class="description">Ремонт рулевой рейки* (разборка, дефектовка, замена дефектных элементов, сборка, регулировка)</span>
                     </div>
                     <div class="line_block">
-                        <span class='js_servies'>Бампер задний</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
+                        <span class="description">Диагностика рулевой рейки на автомобиле</span>
                     </div>
                     <div class="line_block">
-                        <span>Бампер передний</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
+                        <span class="description">Проверка гидравлической рулевой рейки на стенде</span>
                     </div>
                     <div class="line_block">
-                        <span>Багажник</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
+                        <span class="description">Замена рулевых тяг, наконечников и пыльников (в стоимость не включены указанные детали)</span>
                     </div>
                     <div class="line_block">
-                        <span>Капот</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
+                        <span class="description">Разборка и деффектовка рулевой рейки</span>
                     </div>
                     <div class="line_block">
-                        <span>Дверь</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
+                        <span class="description">Проточка шейки штока рулевого механизма</span>
                     </div>
                     <div class="line_block">
-                        <span>Крыло заднее</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
+                        <span class="description">Шлифовка шейки штока рулевого механизма</span>
                     </div>
                     <div class="line_block">
-                        <span>Крыло переднее</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
+                        <span class="description">Шлифовка вала распределителя рулевого механизма</span>
                     </div>
                     <div class="line_block">
-                        <span>Зеркало</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                </div>
-                <div class="prices_block_table js_prices_block_table">
-                    <h5>Замены</h5>
-                    <div class="line_block">
-                        <span>Радиатор</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
+                        <span class="capture">Промывка системы ГУР<br>
+                            (при необходимости)                            
+                            </span>
+                        <span class="cost">50 BYN</span>
                     </div>
                     <div class="line_block">
-                        <span>Фара</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Фонарь</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Бампер передний</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Бампер задний</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Дверь передняя</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Дверь задняя</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Капот</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Багажник</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Крыло переднее</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Крыло заднее</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Крыша</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Стекло лобовое</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Стекло двери</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Стекло заднее</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                </div>
-                <div class="prices_block_table js_prices_block_table">
-                    <h5>Полировка</h5>
-                    <div class="line_block">
-                        <span>Бампер передний</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Бампер задний</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Крыло переднее</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Крыло заднее</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Дверь передняя</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Дверь задняя</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Капот и крыша</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Багажник</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Весь автомобиль</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Фонарь</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Фара(с нанесением защитного покрытия</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                </div>
-                <div class="prices_block_table js_prices_block_table">
-                    <h5>Прочее</h5>
-                    <div class="line_block">
-                        <span>Ремонт бампера</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Нанесение защитного покрытия (нано-лак)</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
-                    </div>
-                    <div class="line_block">
-                        <span>Восстановление геометрии кузова на стапеле</span>
-                        <span>от 5000 р.</span>
-                        <span>от 7000 р.</span>
+                        <span class="capture">ИТОГО:</span>
+                        <span class="cost">350 - 420 BYN</span>
                     </div>
                 </div>
             </div>
-            <button class="btn_more_prices js_btn_more_prices">Развернуть</button>
         </section>
 
         <section class="contact_form">
@@ -747,28 +573,6 @@
         <div class="background_reviews">
             <div class="wrapper_reviews">
 
-                <!-- <section class="about_company">
-                    <div class="about_company_wrapper">
-                        <div class="reviews_about">
-                            <div class="reviews_about_image">
-                                <img src="./images/reviews/review-image.jpg" alt="reviews">
-                            </div>
-                            <div class="reviews_about_text">
-                                <h4>«НЕКРАШЕН НЕБИТ» — СОВРЕМЕННЫЙ СЕРВИС ЛАКОКРАСОЧНЫХ И КУЗОВНЫХ РАБОТ. МЫ ЗАНИМАЕМСЯ РЕМОНТОМ
-                                    АВТОМОБИЛЕЙ, ВОССТАНАВЛИВАЯ ИХ СОСТОЯНИЕ ДО ИДЕАЛЬНОГО.</h4>
-                                <p>Профессиональное оборудование, опытная команда мастеров, высокие стандарты качества — у нас
-                                    есть все необходимое для того, чтобы вовремя и качественно решать любые задачи. Команду
-                                    «Некрашен Небит» ценят за пунктуальность: именно поэтому мы готовы платить вам за каждый
-                                    день задержки, если нарушим согласованные сроки. Нам доверяют с 2012 года — мы ценим это и
-                                    даем гарантию 1 год на свои работы.</p>
-                                <p>Наши мастера всегда готовы помочь и проконсультировать — вы можете прислать нам фото
-                                    автомобиля в WhatsApp или через сайт, чтобы заранее оценить предстоящий ремонт. Об остальном
-                                    мы позаботимся сами.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section> -->
-
                 <!-- <section class="instargam"> возможно, в будущем
                     <h2>Мы в Instagram</h2>
                     <div class="instargam_box">
@@ -788,7 +592,7 @@
                     </div>
                 </section> -->
 
-                <!-- <section class="reviews"> возможно, в будущем
+                <section class="reviews"> <!-- возможно, в будущем -->
                     <h2>Отзывы</h2>
                     <div class="reviews__slider" id="reviews-slider">
                         <div class="reviews__slider-slide">
@@ -799,8 +603,24 @@
                             <p class="reviews__slider-slide__name">Николай, 29 лет</p>
                             <p class="reviews__slider-slide__car">BMW X3 II (F25) 20i xDrive</p>
                         </div>
+                        <div class="reviews__slider-slide">
+                            <div class="reviews__slider-slide__image">
+                                <img src="./images/reviews/reviewer.jpg" alt="reviewer photo">
+                            </div>
+                            <p class="reviews__slider-slide__text">«Приезжал с царапинами на двери (поставили на паркинге в ТЦ). Сервис выбирал по рекомендации, поэтому все спокойно. Из плюсов – точный подбор цвета, исполнение профессиональное, покрытие как заводское. Сроки минимальные, т.к. объем небольшой, всем доволен. Благодарю.»</p>
+                            <p class="reviews__slider-slide__name">Николай, 29 лет</p>
+                            <p class="reviews__slider-slide__car">BMW X3 II (F25) 20i xDrive</p>
+                        </div>
+                        <div class="reviews__slider-slide">
+                            <div class="reviews__slider-slide__image">
+                                <img src="./images/reviews/reviewer.jpg" alt="reviewer photo">
+                            </div>
+                            <p class="reviews__slider-slide__text">«Приезжал с царапинами на двери (поставили на паркинге в ТЦ). Сервис выбирал по рекомендации, поэтому все спокойно. Из плюсов – точный подбор цвета, исполнение профессиональное, покрытие как заводское. Сроки минимальные, т.к. объем небольшой, всем доволен. Благодарю.»</p>
+                            <p class="reviews__slider-slide__name">Николай, 29 лет</p>
+                            <p class="reviews__slider-slide__car">BMW X3 II (F25) 20i xDrive</p>
+                        </div>
                     </div>
-                </section> -->
+                </section>
             </div>
         </div>
 
@@ -819,22 +639,29 @@
                     9:00 до 21:00 без выходных</p>
                 </div>
             </div>
+            <div class="map_yandex" id="YMapsID">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A096150f43a037f46216432a483f8631027e240e80b8d0ff4a0821cc5a39d4ba6&amp;lang=ru_RU&amp;scroll=false">
+                </script>
+            </div>   
         </section>
 
     </main>
     <footer class="footer">
         <div class="footer__wrapper">
-            <p class="footer__text">Некрашен Небит - центр кузовного<br>
-                ремонта и покраски, 2012-2020</p>
-            <img class="footer__logo" src="./images/footer/logo.jpg" alt="logo image">
-            <address>&#169; Все права защищены</address>
+            <p class="footer__text">Ремонт рулевых механизмов<br>
+                и тормозной системы</p>
+            <p class="footer__logo">АВНГАРД</p>
+            <address>&#169; Все права защищены, 2020</address>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/popup.js"></script>
     <script src="./js/scroll_prices.js"></script>
     <script src="./js/price-extend.js"></script>
     <script src="./js/services.js"></script>
+    <script src="./js/reviews_slider.js"></script>
 </body>
 
 </html>
