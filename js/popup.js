@@ -1,4 +1,4 @@
-let btnCostCalculation = document.querySelector('.popup_cost_calculation'),
+/* let btnCostCalculation = document.querySelector('.popup_cost_calculation'),
     popupFeedbackForm = document.querySelector('.popup_form_wrapper'),
     body = document.querySelector('body'),
     closePopupBtn = document.querySelector('.close_popup');
@@ -13,4 +13,4 @@ function openPopup() {
 function closePopup() {
     body.classList.remove('body_overflow');
     popupFeedbackForm.classList.remove('popup_form_wrapper_visible');
-}
+} */

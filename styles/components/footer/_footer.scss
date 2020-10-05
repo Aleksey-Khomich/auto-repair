@@ -15,8 +15,10 @@
         margin: 0 auto;
     }
     &__logo {
-        width: 215px;
-        height: 90px;
+        font-family: 'Algeria Two';
+        color: #fff;
+        font-size: 36px;
+        letter-spacing: 2px;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);

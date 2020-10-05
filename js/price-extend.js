@@ -1,4 +1,4 @@
-function priceExtend() {
+/* function priceExtend() {
   let cont = document.querySelector('.js_prices_block'),
     headerHeight = document.querySelector('.js_prices_block_header').offsetHeight,
     blocks = document.querySelectorAll('.js_prices_block_table'),
@@ -41,3 +41,4 @@ function priceExtend() {
   }
 }
 priceExtend();
+ */

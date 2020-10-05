@@ -14,7 +14,6 @@
         "components/contact_form/_contact_form.scss",
         "components/scheme_of_work/_scheme_of_work.scss",
         "components/about_company/_wrapper_reviews.scss",
-        "components/about_company/_about_company.scss",
         "components/about_company/_instagram.scss",
         "components/about_company/_reviews.scss",
         "components/map/_map.scss",
