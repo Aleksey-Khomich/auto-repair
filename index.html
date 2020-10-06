@@ -490,12 +490,12 @@
                     <div class="feedback_form_text">
                         <p class="form_title">ИЛИ ОСТАВЬТЕ ДАННЫЕ ДЛЯ СВЯЗИ:</p>
                     </div>
-                    <form class="form_feedback">
+                    <form class="form_feedback" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
                         <div class="box_up">
                             <input class="box_up_input" type="text" name="name" placeholder="Как вас зовут?"/>    
                             <input class="box_up_input" type="text" name="phone" placeholder="Ваш контактный телефон"/> 
                         </div>
-                        <button>Отправить</button>
+                        <button type="submit">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -594,6 +594,7 @@
     <script src="./js/price-extend.js"></script>
     <script src="./js/services.js"></script>
     <script src="./js/reviews_slider.js"></script>
+    <script src="./js/send-form.js"></script>
 </body>
 
 </html>
