@@ -1,6 +1,16 @@
 let btnScrollPrices = document.querySelector('.js_scroll_prices_btn'),
-    serviesSection = document.querySelector('.js_servies');
+    btnScrollServies = document.querySelector('.js_scroll_servies_btn');
 
 btnScrollPrices.addEventListener('click', () => {
-    serviesSection.scrollIntoView({ block: "end", behavior: "smooth" });
+    document.getElementById('prices').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+});
+
+btnScrollServies.addEventListener('click', () => {
+    document.getElementById('servies').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
 });

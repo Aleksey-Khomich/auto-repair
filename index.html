@@ -13,16 +13,24 @@
     <header class="header">
         <div class="header_left">
             <div class="logo">Авангард</div>
-            
+        </div>
+        <div class="header_center">
+            <nav>
+            <a href="#our_advantages">Наши преимущества</a>
+            <a href="#servies">Услуги</a>
+            <a href="#prices">Цены</a>
+            <a href="#scheme_of_work">Схема работы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
         </div>
         <div class="header_right">
-            <a href="tel:74956779609" class="number">
+            <a href="tel:375333225151">
                 <img src="./images/header/1976104.svg" alt="phone">
-                <p>+7 (495) 677-96-09</p>
+                <p>+375(33)322-51-51</p>
             </a>
-            <nav class="nav">
-                <img class="nav_mobile" src="./images/header/Hamburger_icon.svg.png" alt="mobile_nav">
-            </nav>
+            <a href="mailto:sto-avangard2008@yandex.ru">
+                <p>sto-avangard2008@yandex.ru</p>
+            </a>
             <!-- <button class="cost_calculation popup_cost_calculation">
                 Расчет стоимости
             </button>
@@ -76,16 +84,16 @@
 
         <section class="promo">
             <div class="center_title">
-                <h1>Ремонт рулевых механизмов и тормозной системы<br>с гарантией  до 1 года</h1>
+                <h1>Ремонт рулевых механизмов <br>с гарантией  до 1 года</h1>
             </div>
             <div class="box_btns">
-                <button class="js_scroll_prices_btn">Услуги</button>
-                <button>Цены</button>
+                <button class="js_scroll_servies_btn">Услуги</button>
+                <button class="js_scroll_prices_btn">Цены</button>
             </div>
         </section>
 
         <section class="our_advantages">
-            <h2>Наши преимущества</h2>
+            <h2 id="our_advantages">Наши преимущества</h2>
             <div class="box_advantages">
                 <div class="box_about">
                     <svg class="image_svg" viewBox="0 0 104.3 35.9" xml:space="preserve"
@@ -297,7 +305,7 @@
         </section>
 
         <section class="services">
-            <h2>Услуги</h2>
+            <h2 id="servies">Услуги</h2>
             <div class="services_tabs" id="tabs-container">
                 <div href="#" data-tab="one" class="services_tab opened">Диагностика рулевой рейки</div>
                 <div href="#" data-tab="two" class="services_tab">Снятие и установка рулевой рейки с автомобиля</div>
@@ -335,7 +343,7 @@
         </section>
 
         <section class="prices">
-            <h3>Цены</h3>
+            <h3 id="prices">Цены</h3>
             <div class="prices_block js_prices_block">
                 <div class="prices_block_header js_prices_block_header">
                     <span>Услуга</span>
@@ -393,40 +401,24 @@
         <section class="contact_form">
             <div class="feedback_form">
                 <div class="feedback_form_left">
-                    <h3>ОЦЕНИТЕ СТОИМОСТЬ РЕМОНТА ПРЯМО СЕЙЧАС</h3>
+                    <h3>ОСТАЛИСЬ ВОПРОСЫ?!</h3>
                     <div class="form_contacts">
-                        <p>Вы можете позвонить нам</p>
-                        <p>+7 (495) 677-96-09</p>
-                        <p>Написать в WHATSAPP
-                            <img src="./images/form/whatsapp.png" alt="whatsapp">
-                        </p>
+                            <p>&#8659; Звоните &#8659;</p>
+                            <a href="tel:375333225151">+375 (33) 322-51-51</a>
+                            <p>&#8659; Пишите &#8659;</p>
+                            <a href="mailto:sto-avangard2008@yandex.ru">sto-avangard2008@yandex.ru</a>
                     </div>
                 </div>
                 <div class="feedback_form_right">
                     <div class="feedback_form_text">
-                        <p class="form_title">ИЛИ ОТПРАВЬТЕ ЗАЯВКУ ЧЕРЕЗ САЙТ:</p>
-                        <p>Загрузите фото области, которая нуждается в ремонте, и мы дадим предварительную оценку уже
-                            сегодня!</p>
+                        <p class="form_title">ИЛИ ОСТАВЬТЕ ДАННЫЕ ДЛЯ СВЯЗИ:</p>
                     </div>
                     <form class="form_feedback">
                         <div class="box_up">
-                            <div class="box_up_input">
-                                <div class="box_up_input_label">Как вас зовут?</div>
-                                <input type="text" name="name">
-                            </div>
-                            <div class="box_up_input">
-                                <div class="box_up_input_label">Контактный телефон</div>
-                                <input type="text" name="phone">
-                            </div>
+                                <input class="box_up_input" type="text" name="name" placeholder="Как вас зовут?"/>    
+                                <input class="box_up_input" type="text" name="phone" placeholder="Ваш контактный телефон"/> 
                         </div>
-                        <div class="box_down">
-                            <div class="box_down_tilte">Загрузите до 5 фото</div>
-                            <div class="box_down_line">
-                                <div class="box_down_line_input"></div>
-                                <label>Загрузить фото</label>
-                            </div>
-                        </div>
-                        <button>Оценить стоимость</button>
+                        <button>Отправить</button>
                     </form>
                 </div>
             </div>
@@ -434,7 +426,7 @@
 
         <section class="scheme_of_work">
             <div class="steps">
-                <h2>Схема работы</h2>
+                <h2 id="scheme_of_work">Схема работы</h2>
                 <div class="steps_box">
                     <div class="steps_box_list">
                         <div class="step">
@@ -531,40 +523,24 @@
         <section class="contact_form">
             <div class="feedback_form">
                 <div class="feedback_form_left">
-                    <h3>ОЦЕНИТЕ СТОИМОСТЬ РЕМОНТА ПРЯМО СЕЙЧАС</h3>
+                    <h3>ОСТАЛИСЬ ВОПРОСЫ?!</h3>
                     <div class="form_contacts">
-                        <p>Вы можете позвонить нам</p>
-                        <p>+7 (495) 677-96-09</p>
-                        <p>Написать в WHATSAPP
-                            <img src="./images/form/whatsapp.png" alt="whatsapp">
-                        </p>
+                            <p>&#8659; Звоните &#8659;</p>
+                            <a href="tel:375333225151">+375 (33) 322-51-51</a>
+                            <p>&#8659; Пишите &#8659;</p>
+                            <a href="mailto:sto-avangard2008@yandex.ru">sto-avangard2008@yandex.ru</a>
                     </div>
                 </div>
                 <div class="feedback_form_right">
                     <div class="feedback_form_text">
-                        <p class="form_title">ИЛИ ОТПРАВЬТЕ ЗАЯВКУ ЧЕРЕЗ САЙТ:</p>
-                        <p>Загрузите фото области, которая нуждается в ремонте, и мы дадим предварительную оценку уже
-                            сегодня!</p>
+                        <p class="form_title">ИЛИ ОСТАВЬТЕ ДАННЫЕ ДЛЯ СВЯЗИ:</p>
                     </div>
                     <form class="form_feedback">
                         <div class="box_up">
-                            <div class="box_up_input">
-                                <div class="box_up_input_label">Как вас зовут?</div>
-                                <input type="text" name="name">
-                            </div>
-                            <div class="box_up_input">
-                                <div class="box_up_input_label">Контактный телефон</div>
-                                <input type="text" name="phone">
-                            </div>
+                                <input class="box_up_input" type="text" name="name" placeholder="Как вас зовут?"/>    
+                                <input class="box_up_input" type="text" name="phone" placeholder="Ваш контактный телефон"/> 
                         </div>
-                        <div class="box_down">
-                            <div class="box_down_tilte">Загрузите до 5 фото</div>
-                            <div class="box_down_line">
-                                <div class="box_down_line_input"></div>
-                                <label>Загрузить фото</label>
-                            </div>
-                        </div>
-                        <button>Оценить стоимость</button>
+                        <button>Отправить</button>
                     </form>
                 </div>
             </div>
@@ -626,11 +602,11 @@
 
         <section class="map">
             <div class="contacts">
-                <h2>Контакты</h2>
+                <h2 id="contacts">Контакты</h2>
                 <div>
                     <h3>Запись и консультация</h3>
-                    <a class="contacts__phone" href="tel:+74956779609">+7 (465) 677-96-09</a><br>
-                    <a class="contacts__mail" href="mailto:info@nekrachen.ru">info@nekrachen.ru</a>
+                    <a class="contacts__phone" href="tel:+375333225151">+375 (33) 322-51-51</a><br>
+                    <a class="contacts__mail" href="mailto:sto-avangard2008@yandex.ru">sto-avangard2008@yandex.ru</a>
                 </div>
                 <div>
                    <h3>Сервисный центр</h3> 
@@ -657,6 +633,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/nav_menu_scroll.js"></script>
     <script src="./js/popup.js"></script>
     <script src="./js/scroll_prices.js"></script>
     <script src="./js/price-extend.js"></script>

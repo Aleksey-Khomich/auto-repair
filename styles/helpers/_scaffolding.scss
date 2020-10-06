@@ -5,6 +5,7 @@
 }
 body {
     max-width: 100%;
+    min-width: 320px;
 }
 .body_overflow {
     overflow: hidden;
@@ -13,4 +14,10 @@ body {
 }
 img {
     max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+button {
+    outline: none;
 }
