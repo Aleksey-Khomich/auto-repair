@@ -1,8 +1,14 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\OAuth;
+
 // Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
+require 'phpmailer/OAuth.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
@@ -17,7 +23,7 @@ $body = "
 ";
 
 // Настройки PHPMailer
-$mail = new PHPMailer\PHPMailer\PHPMailer();
+$mail = new PHPMailer\PHPMailer\PHPMailer(true);
 try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
@@ -27,11 +33,11 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.by'; // SMTP сервера вашей почты
-    $mail->Username   = 'asdibcrush'; // Логин на почте
+    $mail->Username   = 'asdibcrushyandex.by'; // Логин на почте
     $mail->Password   = '781227bhf'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('asdibcrush@yandex.by', 'Имя отправителя'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('asdibcrush@yandex.by', 'Mail'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('irinaboiko95@yandex.by');  
