@@ -13,6 +13,12 @@
         max-width: 1800px;
         padding: 50px;    
         margin: 0 auto;
+        @media screen and (max-width:800px) {
+            padding: 20px;
+        }
+        @media screen and (max-width:600px) {
+            padding: 10px;
+        }
     }
     &__logo {
         font-family: 'Algeria Two';
@@ -22,8 +28,29 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        @media screen and (max-width:800px) {
+            font-size: 28px;
+        }
+        @media screen and (max-width:600px) {
+            font-size: 25px;
+        }
+        @media screen and (max-width:400px) {
+            font-size: 20px;
+        }
     }
     address {
         font-style: normal;
+    }
+    @media screen and (max-width:800px) {
+        font-size: 10px;
+        line-height: 10px;
+    }
+    @media screen and (max-width:600px) {
+        font-size: 8px;
+        line-height: 8px;
+    }
+    @media screen and (max-width:400px) {
+        font-size: 6px;
+        line-height: 6px;
     }
 }

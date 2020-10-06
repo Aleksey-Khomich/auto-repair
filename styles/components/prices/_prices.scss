@@ -63,7 +63,6 @@
                     font-family: 'Helvetica Neue';
                     font-style: inherit;
                     font-weight: 200;
-                    
                     padding: 10px 0 10px 3px;
                     font-size: 18px;
                     justify-content: flex-start;
@@ -71,6 +70,12 @@
                     min-height: 43px;
                     line-height: 20px;
                     width: 130px;
+                    @media screen and (max-width:600px) {
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width:400px) {
+                        font-size: 12px;
+                    }
                 }
                 .capture {
                     //font-family: 'Helvetica Neue';
@@ -93,6 +98,18 @@
                     width: 100%;
                 }
             }
+        }
+        @media screen and (max-width:768px) {
+            max-width: 680px;
+            padding: 20px;
+        }
+        @media screen and (max-width:600px) {
+            max-width: 580px;
+            padding: 20px;
+        }
+        @media screen and (max-width:400px) {
+            max-width: 380px;
+            padding: 20px;
         }
     }
         /* .btn_more_prices {
