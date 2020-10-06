@@ -144,7 +144,9 @@
         }
         .opened {
             display: flex;
-            flex-direction: column;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
         }
         @media screen and (max-width: 900px) {
             padding: 50px 30px;
