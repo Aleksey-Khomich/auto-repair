@@ -100,7 +100,7 @@
         }
         button {
             width: 40%;
-            height: 61px;
+            height: 48px;
             letter-spacing: 0.9px;
             align-items: center;
             font-family: 'DIN Condensed';
@@ -130,6 +130,49 @@
             @media screen and (max-width:350px) {
                 font-size: 18px;
             }
+        }
+        .form-promo-thanks {
+            display: none;   
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 150;
+            overflow: hidden;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, .9);
+            padding: 40px;
+        }
+        .form-promo-thanks-text {
+            font-family: 'DIN Condensed';
+            color: #000;
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .form-promo-thanks-button {
+            font-family: 'DIN Condensed';
+            font-size: 1.5em;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #c6091c;
+            border: 5px solid transparent;
+            transition: all 0.3s ease;
+            padding: 8px 40px;
+
+            &:hover {
+                cursor: pointer;
+                color: #c6091c;
+                background-color: #fff;
+                border: 5px solid #c6091c;
+                transition: all 0.3s ease;
+            }
+        }
+        .show-thanks {
+            display: flex;
         }
     @media screen and (max-width:500px) {
         flex-direction: column;

@@ -42,12 +42,16 @@
             <div class="center_title">
                 <h1>Ремонт рулевых механизмов <br>с гарантией  до 1 года</h1>
             </div>
-                <form class="form_feedback" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+                <form class="form_feedback" id="form-promo" method="POST" action="https://formspree.io/asdibcrush@yandex.by">
                     <div class="box_up">
-                            <input class="box_up_input" type="text" name="name" placeholder="Как вас зовут?"/>    
-                            <input class="box_up_input" type="text" name="phone" placeholder="Ваш телефон"/> 
+                        <input class="box_up_input" type="text" name="name" placeholder="Как вас зовут?" required/>    
+                        <input class="box_up_input" id="form-promo-phone" type="text" name="phone" placeholder="Ваш телефон"required/> 
                     </div>
                     <button type="submit">Получить консультацию</button>
+                    <div class="form-promo-thanks" id="form-promo-thanks">
+                        <p class="form-promo-thanks-text" id="form-promo-thanks-text"></p>
+                        <div class="form-promo-thanks-button" id="form-promo-thanks-button">Закрыть</div>
+                    </div>
                 </form>
         </section>
 
@@ -373,12 +377,16 @@
                         <p class="form_title">ИЛИ ОСТАВЬТЕ ДАННЫЕ ДЛЯ СВЯЗИ:</p>
                         <p class="form_title_media">ОСТАВЬТЕ ДАННЫЕ ДЛЯ СВЯЗИ:</p>
                     </div>
-                    <form class="form_feedback">
+                    <form class="form_feedback" id="form-questions" method="POST" action="https://formspree.io/asdibcrush@yandex.by">
                         <div class="box_up">
-                                <input class="box_up_input" type="text" name="name" placeholder="Как вас зовут?"/>    
-                                <input class="box_up_input" type="text" name="phone" placeholder="Ваш контактный телефон"/> 
+                            <input class="box_up_input" type="text" name="name" placeholder="Как вас зовут?" required/>    
+                            <input class="box_up_input" id="form-questions-phone" type="text" name="phone" placeholder="Ваш контактный телефон" required/> 
                         </div>
-                        <button>Записаться на ремонт</button>
+                        <button type="submit">Записаться на ремонт</button>
+                        <div class="form-thanks" id="form-questions-thanks">
+                            <p class="form-thanks-text" id="form-questions-thanks-text"></p>
+                            <div class="form-thanks-button" id="form-questions-thanks-button">Закрыть</div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -495,12 +503,16 @@
                     <div class="feedback_form_text">
                         <p class="form_title">ОСТАВЬТЕ ДАННЫЕ ДЛЯ СВЯЗИ:</p>
                     </div>
-                    <form class="form_feedback" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+                    <form class="form_feedback" id="form-ready" method="POST" action="https://formspree.io/asdibcrush@yandex.by">
                         <div class="box_up">
-                                <input class="box_up_input" type="text" name="name" placeholder="Как вас зовут?"/>    
-                                <input class="box_up_input" type="text" name="phone" placeholder="Ваш телефон"/> 
+                            <input class="box_up_input" type="text" name="name" placeholder="Как вас зовут?"/>    
+                            <input class="box_up_input" id="form-ready-phone" type="text" name="phone" placeholder="Ваш телефон"/> 
                         </div>
                         <button type="submit">Записаться на ремонт</button>
+                        <div class="form-thanks" id="form-ready-thanks">
+                            <p class="form-thanks-text" id="form-ready-thanks-text"></p>
+                            <div class="form-thanks-button" id="form-ready-thanks-button">Закрыть</div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -509,7 +521,7 @@
         <div class="background_reviews">
             <div class="wrapper_reviews">
 
-                <!-- <section class="instargam"> возможно, в будущем
+                <section class="instargam"><!--  возможно, в будущем -->
                     <h2>Мы в Instagram</h2>
                     <div class="instargam_box">
                         <div class="element">
@@ -526,7 +538,7 @@
                             <img src="./images/instargam/instacar6.jpg" alt="car">
                         </div>
                     </div>
-                </section> -->
+                </section>
 
                 <section class="reviews"> <!-- возможно, в будущем -->
                     <h2>Отзывы</h2>
@@ -593,12 +605,14 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.maskedinput.js"></script>
     <script src="./js/nav_menu_scroll.js"></script>
     <script src="./js/popup.js"></script>
     <script src="./js/price-extend.js"></script>
     <script src="./js/services.js"></script>
     <script src="./js/reviews_slider.js"></script>
-    <script src="./js/send-form.js"></script>
+    <script src="./js/masks-in-forms.js"></script>
+    <script src="./js/sending-forms.js"></script>
 </body>
 
 </html>

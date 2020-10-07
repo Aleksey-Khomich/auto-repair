@@ -13,7 +13,7 @@
             font-family: 'Algeria Two';
             font-size: 36px;
             letter-spacing: 2px;
-            @media screen and (max-width:975px) {
+            @media screen and (max-width:990px) {
                 font-size: 30px;
                 letter-spacing: 1px;
             }
@@ -30,21 +30,22 @@
                 font-style: normal;
                 text-transform: uppercase;
                 transition: .3s all ease;
-                &:hover {
+                outline: none;
+                &:hover, &:focus {
                     color: #c6091c;
                     cursor: pointer;
                     background-color: #fff;
                     transition: .3s all ease;
                 }
-                @media screen and (max-width:1190px) {
+                @media screen and (max-width:1200px) {
                     padding: 5px 10px;
                     margin: 0;
                     font-size: 15px;
                 }
-                @media screen and (max-width:975px) {
+                @media screen and (max-width:990px) {
                     font-size: 13px;
                 }
-                @media screen and (max-width:820px) {
+                @media screen and (max-width:835px) {
                     padding: 5px 5px;
                 }
             }
@@ -73,13 +74,14 @@
             text-decoration: none;
             transition: .3s all ease;
             color: #000;
+            outline: none;
             img {
                 position: absolute;
                 left: -30px;
                 max-width: 20%;
                 transition: .3s all ease;
             }
-            &:hover {
+            &:hover, &:focus {
                 color: #c6091c;
                 transition: .3s all ease;
                 text-decoration: underline;
@@ -94,228 +96,13 @@
             font-size: 24px;
             font-style: normal;
             text-transform: uppercase;
-            @media screen and (max-width:1190px) {
+            @media screen and (max-width:1200px) {
                 font-size: 20px;
             }
-            @media screen and (max-width:975px) {
+            @media screen and (max-width:990px) {
                 font-size: 17px;
             }
         }
-        /* button {
-            border: none;
-            background-color: #c6091c;
-            border: 6px solid #c6091c;
-            padding: 17px 47px;
-            color: #fff;
-            font-family: 'DIN Condensed';
-            font-size: 24px;
-            font-style: normal;
-            text-transform: uppercase;
-            transition: .3s all ease;
-            &:hover {
-                color: #000;
-                cursor: pointer;
-                background-color: #fff;
-                border: 6px solid #000;
-                transition: .3s all ease;
-                
-            }
-        } */
-        /* .popup_form_wrapper {
-            display: none;
-            overflow-y: scroll;
-            position: fixed;
-            flex-direction: column;
-            justify-content: center;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            z-index: 6;
-            .popup_form {
-                background-image: url('../images/promo/top-bg1.jpg');
-                background-position: center center;
-                flex-direction: column;
-                padding-top: 37px;
-                padding-left: 33px;
-                padding-right: 35px;
-                padding-bottom: 0;
-                height: 750px;
-                border: 1px solid white;
-                position: relative;
-                color: white;
-                font-family: 'Helvetica Neue';
-                svg {
-                    position: absolute;
-                    top: 44px;
-                    right: 37px;
-                    fill: white;
-                    cursor: pointer;
-                }
-                .close_popup {
-                    border-radius: 50%;
-                    &:hover {
-                        box-shadow: inset 2px 2px 10px 2px red,
-                                    inset -2px -2px 10px 2px red,
-                                     2px -2px 10px 2px red,
-                                     -2px 2px 10px 2px red;
-                    }
-                }
-                &_feedback {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    width: 100%;
-                    padding: 0;
-                    border: none;
-                    h3 {
-                        text-transform: uppercase;
-                        font-family: 'DIN Condensed';
-                        font-weight: normal;
-                        font-size: 35px;
-                        line-height: 38px;
-                        margin-bottom: 25px;
-                        color: #f9f9f2;
-                    }
-                    p {
-                        font-family: 'Helvetica Neue';
-                        font-size: 24px;
-                        line-height: 28px;
-                        margin-bottom: 28px;
-                    }
-                    &_contacts {
-                        background-color: rgba(0, 0, 0, 0.66);
-                        padding-left: 31px;
-                        padding-right: 35px;
-                        margin-left: -33px;
-                        margin-right: -35px;
-                        padding-bottom: 20px;
-                        padding-top: 15px;
-                        p {
-                            font-size: 24px;
-                        }
-                        p:nth-child(2) {
-                            font-size: 32px;
-                        }
-                    }
-                }
-                &_feed {
-                    p {
-                        margin-top: 20px;
-                        font-size: 24px;
-                        line-height: 1;
-                        margin-bottom: 22px;
-                    }
-                    .form_feedback {
-                        width: 100%;
-                        .box_up {
-                            display: flex;
-                            width: 100%;
-                            justify-content: space-between;
-                            flex-wrap: wrap;
-                            &_input {
-                                position: relative;
-                                width: 47%;
-                                &_label {
-                                    position: absolute;
-                                    display: flex;
-                                    align-items: center;
-                                    width: 100%;
-                                    height: 100%;
-                                    padding-top: 12px;
-                                    padding-bottom: 16px;
-                                    padding-left: 15px;
-                                }
-                                input {
-                                    width: 100%;
-                                    color: white;
-                                    background: transparent;
-                                    border: 1px solid white;
-                                    font-size: 0;
-                                    line-height: 18px;
-                                    padding-top: 12px;
-                                    padding-bottom: 16px;
-                                    padding-left: 15px;
-                                    max-height: 48px;
-                                }
-                            }
-                        }
-                        .box_down {
-                            padding-top: 26px;
-                            &_tilte {
-                                font-size: 18px;
-                                line-height: 1;
-                                margin-bottom: 15px;
-                            }
-                            &_line {
-                                display: flex;
-                                &_input {
-                                    color: white;
-                                    background: transparent;
-                                    border: 1px solid white;
-                                    font-size: 18px;
-                                    line-height: 1;
-                                    padding-top: 12px;
-                                    padding-bottom: 16px;
-                                    padding-left: 15px;
-                                    flex-grow: 1;
-                                }
-                                label {
-                                    color: white;
-                                    background: transparent;
-                                    border: 1px solid white;
-                                    font-size: 18px;
-                                    line-height: 1;
-                                    padding-top: 12px;
-                                    padding-bottom: 16px;
-                                    padding-left: 25px;
-                                    padding-right: 25px;
-                                }
-                            }
-                        }
-                        button {
-                            margin-top: 32px;
-                            margin-bottom: 20px;
-                            width: 100%;
-                            min-height: 61px;
-                            letter-spacing: 0.9px;
-                            line-height: 1;
-                            align-items: center;
-                            font-family: 'DIN Condensed';
-                            text-transform: uppercase;
-                            border: none;
-                            background-color: #c6091c;
-                            border: 6px solid #c6091c;
-                            font-size: 24px;
-                            text-align: center;
-                            color: #fff;
-                            text-decoration: none;
-                            transition: .3s all ease;
-                            &:hover {
-                                color: #c6091c;
-                                cursor: pointer;
-                                background-color: #fff;
-                                border: 6px solid #c6091c;
-                                transition: .3s all ease;
-                            }
-                        }
-                    }
-                }
-            }
-            &_visible {
-                display: block;
-                position: fixed;
-                margin: 0 auto;
-                max-width: 1280px;
-                width: 100%;
-                height: 100%;
-                z-index: 5;
-                background-color: rgba(0, 0, 0, 0.87);
-                top: 0;
-                left: 2.5%;
-            }
-        } */
         @media screen and (max-width:576px) {
             display:none;
         }
@@ -323,7 +110,7 @@
     @media screen and (max-width:975px) {
         padding: 24px 30px;
     }
-    @media screen and (max-width:820px) {
+    @media screen and (max-width:835px) {
         padding: 24px 20px;
     }
 }

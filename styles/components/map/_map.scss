@@ -39,7 +39,8 @@
             line-height: 34px;
             text-decoration: none;
             transition: .3s all ease;
-            &:hover {
+            outline: none;
+            &:hover, &:focus {
                 color: #c6091c;
                 text-decoration: underline;
                 transition: .3s all ease;
