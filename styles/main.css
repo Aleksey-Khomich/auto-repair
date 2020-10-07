@@ -592,7 +592,7 @@ button {
   .header .navBurger {
     position: fixed;
     right: 30px;
-    top: 20px;
+    top: 39px;
     z-index: 10;
     cursor: pointer;
     background: #111;
