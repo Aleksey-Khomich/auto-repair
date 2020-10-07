@@ -1,6 +1,6 @@
 /*FORM PROMO*/
 
-/* window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', function () {
 	var formPromo = document.getElementById('form-promo');
 	var thanksPromo = document.getElementById('form-promo-thanks');
 	var thanksTextPromo = document.getElementById('form-promo-thanks-text');
@@ -46,11 +46,11 @@ function ajax(method, url, dataPromo, success, error) {
 		}
 	};
 	xhr.send(dataPromo);
-} */
+}
 
 /*FORM QUESTIONS*/
 
-/* window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', function () {
 	var formQuestions = document.getElementById('form-questions');
 	var thanksQuestions = document.getElementById('form-questions-thanks');
 	var thanksTextQuestions = document.getElementById('form-questions-thanks-text');
@@ -96,11 +96,11 @@ function ajax(method, url, dataQuestions, success, error) {
 		}
 	};
 	xhr.send(dataQuestions);
-} */
+}
 
 /*FORM READY*/
 
-/* window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', function () {
 	var formReady = document.getElementById('form-ready');
 	var thanksReady = document.getElementById('form-ready-thanks');
 	var thanksTextReady = document.getElementById('form-ready-thanks-text');
@@ -146,4 +146,4 @@ function ajax(method, url, dataReady, success, error) {
 		}
 	};
 	xhr.send(dataReady);
-} */
+}
