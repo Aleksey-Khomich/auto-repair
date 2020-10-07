@@ -24,6 +24,7 @@
             <a href="#contacts">Контакты</a>
         </nav>
         </div>
+        <div class="humburger_menu"></div>
         <div class="header_right">
             <a href="tel:375333225151">
                 <img src="./images/header/1976104.svg" alt="phone">
@@ -41,10 +42,13 @@
             <div class="center_title">
                 <h1>Ремонт рулевых механизмов <br>с гарантией  до 1 года</h1>
             </div>
-            <div class="box_btns">
-                <button class="js_scroll_servies_btn">Услуги</button>
-                <button class="js_scroll_prices_btn">Цены</button>
-            </div>
+                <form class="form_feedback" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+                    <div class="box_up">
+                            <input class="box_up_input" type="text" name="name" placeholder="Как вас зовут?"/>    
+                            <input class="box_up_input" type="text" name="phone" placeholder="Ваш телефон"/> 
+                    </div>
+                    <button type="submit">Получить консультацию</button>
+                </form>
         </section>
 
         <section class="our_advantages">
@@ -367,13 +371,14 @@
                 <div class="feedback_form_right">
                     <div class="feedback_form_text">
                         <p class="form_title">ИЛИ ОСТАВЬТЕ ДАННЫЕ ДЛЯ СВЯЗИ:</p>
+                        <p class="form_title_media">ОСТАВЬТЕ ДАННЫЕ ДЛЯ СВЯЗИ:</p>
                     </div>
                     <form class="form_feedback">
                         <div class="box_up">
                                 <input class="box_up_input" type="text" name="name" placeholder="Как вас зовут?"/>    
                                 <input class="box_up_input" type="text" name="phone" placeholder="Ваш контактный телефон"/> 
                         </div>
-                        <button>Отправить</button>
+                        <button>Записаться на ремонт</button>
                     </form>
                 </div>
             </div>
@@ -415,7 +420,7 @@
                     </div>
                     <div class="steps_box_about">
                         <div class="about_director">
-                            <img src="./images/scheme_work/director.jpg" alt="director photo">
+                            <div class="about_director_box"></div>
                             <h3>ОТ РУКОВОДИТЕЛЯ</h3>
                         </div>
                         <div class="about_text">
@@ -446,7 +451,7 @@
                         </svg>
                         <div class="guaranties_box_left_text">
                             <h3>1 ГОД ГАРАНТИИ<br>
-                                НА КУЗОВНЫЕ РАБОТЫ</h3>
+                                НА ВЫПОЛНЕННЫЕ РАБОТЫ</h3>
                             <p>Гарантия на выполненные работы до 1 года в зависимости от повреждений агрегата.</p>
                         </div>
                     </div>
@@ -478,7 +483,7 @@
         <section class="contact_form">
             <div class="feedback_form">
                 <div class="feedback_form_left">
-                    <h3>ОСТАЛИСЬ ВОПРОСЫ?!</h3>
+                    <h3>ГОТОВЫ ЗАПИСАТЬСЯ НА РЕМОНТ?</h3>
                     <div class="form_contacts">
                             <p>&#8659; Звоните &#8659;</p>
                             <a href="tel:375333225151">+375 (33) 322-51-51</a>
@@ -488,14 +493,14 @@
                 </div>
                 <div class="feedback_form_right">
                     <div class="feedback_form_text">
-                        <p class="form_title">ИЛИ ОСТАВЬТЕ ДАННЫЕ ДЛЯ СВЯЗИ:</p>
+                        <p class="form_title">ОСТАВЬТЕ ДАННЫЕ ДЛЯ СВЯЗИ:</p>
                     </div>
                     <form class="form_feedback" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
                         <div class="box_up">
                                 <input class="box_up_input" type="text" name="name" placeholder="Как вас зовут?"/>    
                                 <input class="box_up_input" type="text" name="phone" placeholder="Ваш телефон"/> 
                         </div>
-                        <button type="submit">Отправить</button>
+                        <button type="submit">Записаться на ремонт</button>
                     </form>
                 </div>
             </div>
@@ -590,7 +595,6 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/nav_menu_scroll.js"></script>
     <script src="./js/popup.js"></script>
-    <script src="./js/scroll_prices.js"></script>
     <script src="./js/price-extend.js"></script>
     <script src="./js/services.js"></script>
     <script src="./js/reviews_slider.js"></script>

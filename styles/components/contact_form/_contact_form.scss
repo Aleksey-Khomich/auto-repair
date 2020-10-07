@@ -44,6 +44,19 @@
                     font-size: 30px;
                     line-height: 20px;
                 }
+                @media screen and (max-width:768px) {
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
+                @media screen and (max-width:576px) {
+                    font-size: 35px;
+                }
+                @media screen and (max-width:500px) {
+                    font-size: 30px;
+                }
+                @media screen and (max-width:450px) {
+                    font-size: 25px;
+                }
             }
             .form_contacts {
                 text-align: center;
@@ -76,6 +89,15 @@
                         font-size: 24px;
                     }
                 }
+                @media screen and (max-width:576px) {
+                    display: none;
+                }
+            }
+            @media screen and (max-width:768px) {
+                width: initial;
+                padding-bottom: 0;
+                padding-right: 0;
+                border-right: 0;
             }
         }
         &_right {
@@ -95,11 +117,28 @@
                     line-height: 1;
                     text-transform: uppercase;
                     font-family: 'DIN Condensed';
+                    text-align: center;
                     @media screen and (max-width:1000px) {
                         font-size: 28px;
                     }
                     @media screen and (max-width:850px) {
                         font-size: 26px;
+                    }
+                    @media screen and (max-width:576px) {
+                        display: none;
+                    }
+                }
+                .form_title_media {
+                    display: none;
+                    @media screen and (max-width:576px) {
+                        display: block;
+                        font-family: 'DIN Condensed';
+                        font-size: 23px;
+                        margin-bottom: 20px;
+                    }
+                    @media screen and (max-width:500px) {
+                        font-size: 20px;
+                        text-align: center;
                     }
                 }
                 p {
@@ -132,7 +171,18 @@
                                     font-size: 12px;
                                 }
                             }
+                            @media screen and (max-width:576px) {
+                                width: 80%;
+                                margin-bottom: 10px;
+                            }
                         }
+                        @media screen and (max-width:576px) {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                    }
+                    @media screen and (max-width:768px) {
+                        width:150%;
                     }
                 }
                 button {
@@ -165,6 +215,15 @@
                 @media screen and (max-width:1000px) {
                     padding-left: 25px;
                 }
+                @media screen and (max-width:768px) {
+                    padding-bottom: 0;
+                    padding-left: 0;
+                }
+            }
+            @media screen and (max-width:768px) {
+                flex-direction: column;
+                padding-left: 0;
+                padding-right: 0;
             }
         }
         @media screen and (max-width:700px) {
