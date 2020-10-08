@@ -134,64 +134,86 @@
                 }
             }
         }
-        .navBurger {
+        .navBurger_box {
             position: fixed;
-            right: 30px;
-            top: 39px;
             z-index: 10;
-            cursor: pointer;
-            background: #111;
-            box-sizing: border-box;
-            background-clip: content-box;
-            width: 30px;
-            height: 25px;
-            border-top: 11px solid transparent;
-            border-bottom: 11px solid transparent;
-            -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-            -webkit-transition: all 0.25s ease-in-out;
-            transition: all 0.25s ease-in-out;
-            &:before,
-            &:after {
-                content: "";
-                position: absolute;
+            right: 24px;
+            top: 32px;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,.5);
+            border-radius: 50%;
+            .navBurger {
+                position: fixed;
+                right: 30px;
+                top: 39px;
+                z-index: 10;
+                cursor: pointer;
                 background: #111;
-                height: 2px;
-                width: 100%;
-                right: 0;
-                will-change: rotate;
+                box-sizing: border-box;
+                background-clip: content-box;
+                width: 30px;
+                height: 25px;
+                border-top: 11px solid transparent;
+                border-bottom: 11px solid transparent;
                 -webkit-transform: rotate(0deg);
                 transform: rotate(0deg);
-                -webkit-transition: all 0.5s ease;
-                transition: all 0.5s ease;
-                box-shadow: 0 0 10px #c6091c;
+                -webkit-transition: all 0.25s ease-in-out;
+                transition: all 0.25s ease-in-out;
+                &:before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                    background: #111;
+                    height: 2px;
+                    width: 100%;
+                    right: 0;
+                    will-change: rotate;
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                    -webkit-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                    box-shadow: 0 0 10px #c6091c;
+                }
+                &:before {
+                    top: -10px;
+                    width: 90%;
+                }
+                &:after {
+                    bottom: -10px;
+                    width: 80%;
+                }
+                &.active {
+                    background: transparent;
+                    background-clip: content-box;
+                }
+                &.active:before {
+                    -webkit-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                    top: 0;
+                    background: #eee;
+                    width: 110%;
+                }
+                &.active:after {
+                    bottom: 0;
+                    -webkit-transform: rotate(-135deg);
+                    transform: rotate(-135deg);
+                    background: #eee;
+                    width: 110%;
+                }
+                @media screen and (max-width:485px) {
+                        top: 55px;
+                }
+                @media screen and (max-width:363px) {
+                    top: 68px;
             }
-            &:before {
-                top: -10px;
-                width: 90%;
             }
-            &:after {
-                bottom: -10px;
-                width: 80%;
-            }
-            &.active {
-                background: transparent;
-                background-clip: content-box;
-            }
-            &.active:before {
-                -webkit-transform: rotate(135deg);
-                transform: rotate(135deg);
-                top: 0;
-                background: #eee;
-                width: 110%;
-            }
-            &.active:after {
-                bottom: 0;
-                -webkit-transform: rotate(-135deg);
-                transform: rotate(-135deg);
-                background: #eee;
-                width: 110%;
-            }
+            @media screen and (max-width:485px) {
+                top: 48px;
+        }
+        @media screen and (max-width:363px) {
+            top: 60px;
+    }
         }
     }
     &_right {
